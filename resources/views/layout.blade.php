@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name = "viewport" content= "width=device-width, initial-scale=1.0">
     <meta http-equiv= "X-UA-Compatible" content= "ie=edge">
-    <title> Primeiro Exemplo </title>
+    <title> Quiz Friends </title>
     @vite(['resources/js/app.js'])
 </head>
 <body>
@@ -17,7 +17,7 @@
     </div>
     <div class= "container">
         <div class= "card-footer">
-            <p class= "text-center py-4"> Todos os direitos reservados a & copy; Copyright </p>
+            <p class= "text-center py-4"> Todos os direitos reservados a Luis Othavio </p>
         </div>
     </div>
 </body>

@@ -196,30 +196,30 @@ class quizController extends Controller{
         $dados[1]['gabarito'] = $this->perguntas['pergunta1'];
         $dados[1]['resposta'] = session('resposta1');
         $dados[1]['resultado'] = session('resultado1');
-        $dados[2]['gabarito'] = $this->perguntas['pergunta1'];
-        $dados[2]['resposta'] = session('resposta1');
-        $dados[2]['resultado'] = session('resultado1');
-        $dados[3]['gabarito'] = $this->perguntas['pergunta1'];
-        $dados[3]['resposta'] = session('resposta1');
-        $dados[3]['resultado'] = session('resultado1');
-        $dados[4]['gabarito'] = $this->perguntas['pergunta1'];
-        $dados[4]['resposta'] = session('resposta1');
-        $dados[4]['resultado'] = session('resultado1');
-        $dados[5]['gabarito'] = $this->perguntas['pergunta1'];
-        $dados[5]['resposta'] = session('resposta1');
-        $dados[5]['resultado'] = session('resultado1');
-        $dados[6]['gabarito'] = $this->perguntas['pergunta1'];
-        $dados[6]['resposta'] = session('resposta1');
-        $dados[6]['resultado'] = session('resultado1');
-        $dados[7]['gabarito'] = $this->perguntas['pergunta1'];
-        $dados[7]['resposta'] = session('resposta1');
-        $dados[7]['resultado'] = session('resultado1');
-        $dados[8]['gabarito'] = $this->perguntas['pergunta1'];
-        $dados[8]['resposta'] = session('resposta1');
-        $dados[8]['resultado'] = session('resultado1');
-        $dados[9]['gabarito'] = $this->perguntas['pergunta1'];
-        $dados[9]['resposta'] = session('resposta1');
-        $dados[9]['resultado'] = session('resultado1');
+        $dados[2]['gabarito'] = $this->perguntas['pergunta2'];
+        $dados[2]['resposta'] = session('resposta2');
+        $dados[2]['resultado'] = session('resultado2');
+        $dados[3]['gabarito'] = $this->perguntas['pergunta3'];
+        $dados[3]['resposta'] = session('resposta3');
+        $dados[3]['resultado'] = session('resultado3');
+        $dados[4]['gabarito'] = $this->perguntas['pergunta4'];
+        $dados[4]['resposta'] = session('resposta4');
+        $dados[4]['resultado'] = session('resultado4');
+        $dados[5]['gabarito'] = $this->perguntas['pergunta5'];
+        $dados[5]['resposta'] = session('resposta5');
+        $dados[5]['resultado'] = session('resultado5');
+        $dados[6]['gabarito'] = $this->perguntas['pergunta6'];
+        $dados[6]['resposta'] = session('resposta6');
+        $dados[6]['resultado'] = session('resultado6');
+        $dados[7]['gabarito'] = $this->perguntas['pergunta7'];
+        $dados[7]['resposta'] = session('resposta7');
+        $dados[7]['resultado'] = session('resultado7');
+        $dados[8]['gabarito'] = $this->perguntas['pergunta8'];
+        $dados[8]['resposta'] = session('resposta8');
+        $dados[8]['resultado'] = session('resultado8');
+        $dados[9]['gabarito'] = $this->perguntas['pergunta9'];
+        $dados[9]['resposta'] = session('resposta9');
+        $dados[9]['resultado'] = session('resultado9');
         $dados[10]['gabarito'] = $this->perguntas['pergunta10'];
         $dados[10]['resposta'] = session('resposta10');
         $dados[10]['resultado'] = session('resultado10');
@@ -227,15 +227,15 @@ class quizController extends Controller{
         $acertos = session('acertos');
 
         if ($acertos == 10) {
-            $dados['mensagem'] = "Excelente!! Você acertou todas!! Você é um super fã!!";
+            $dados['mensagem'] = "você acertou 100%";
         } elseif ($acertos > 7) {
             $dados['mensagem'] = "Muito bom!! Você acertou " . $acertos . " de 10!! Parabéns!!";
         } elseif ($acertos > 5) {
-            $dados['mensagem'] = "Você conhece um pouco sobre a banda!! Mas pode melhorar. Você acertou " . $acertos . " de 10.";
+            $dados['mensagem'] = "Você conhece um pouco sobre a série!! Mas pode melhorar. Você acertou " . $acertos . " de 10.";
         } elseif ($acertos == 5) {
-            $dados['mensagem'] = "Você acertou 50% do teste!! Está de recuperação!!";
+            $dados['mensagem'] = "você acertou 50%, vamo melhorar?";
         } else {
-            $dados['mensagem'] = "Precisa se inteirar mais sobre a banda! Você acertou " . $acertos . " de 10.";
+            $dados['mensagem'] = "Precisa se inteirar mais sobre a série! Você acertou " . $acertos . " de 10.";
         }
 
         return view('resultado', compact('dados'));
